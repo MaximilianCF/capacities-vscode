@@ -1,0 +1,10 @@
+.vscode/
+node_modules/
+.git/
+docker-compose.yml
+Dockerfile
+.devcontainer/
+.env
+*.log
+*.ts
+tsconfig.json
