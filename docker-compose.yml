@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  extension-dev:
+    build: .
+    volumes:
+      - .:/workspace
+    working_dir: /workspace
+    command: npm run watch

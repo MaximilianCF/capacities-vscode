@@ -1,0 +1,35 @@
+{
+  "name": "capacities-vscode",
+  "displayName": "Capacities Sync",
+  "description": "Envie notas Markdown para o Capacities diretamente do VSCode.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "capacities.sendMarkdown",
+        "title": "Enviar Markdown para Capacities"
+      }
+    ]
+  },
+  "scripts": {
+    "watch": "npx tsc -w -p ./",
+    "compile": "npx tsc -p ./"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^18.0.0",
+    "@types/vscode": "^1.78.0",
+    "vsce": "^2.13.0"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.9",
+    "dotenv": "^16.0.3"
+  }
+ }
